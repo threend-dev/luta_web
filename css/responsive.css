@@ -1,0 +1,309 @@
+/* ===== BaseBall Book Web - Responsive Styles ===== */
+
+/* ===== Tablet (max-width: 1024px) ===== */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 24px 40px;
+  }
+
+  .hero-content {
+    padding-left: 0;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    padding-right: 0;
+    margin-top: 40px;
+  }
+
+  .phone-mockup {
+    width: 220px;
+    height: 440px;
+    border-radius: 28px;
+  }
+
+  .phone-mockup::before {
+    top: 14px;
+    width: 80px;
+    height: 20px;
+  }
+
+  .phone-screen {
+    border-radius: 20px;
+  }
+
+  .highlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .intro-block,
+  .intro-block.reverse {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .intro-visual {
+    flex: 0 0 auto;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .feature-body {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+}
+
+/* ===== Mobile (max-width: 768px) ===== */
+@media (max-width: 768px) {
+  :root {
+    --nav-height: 56px;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: var(--nav-height);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .nav-menu.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .nav-link {
+    font-size: 20px;
+    padding: 14px 32px;
+  }
+
+  .hero-tagline {
+    font-size: 36px;
+  }
+
+  .hero-app-name {
+    font-size: 22px;
+  }
+
+  .hero-app-name-full {
+    font-size: 16px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+  }
+
+  .hero-badge {
+    font-size: 13px;
+  }
+
+  .section {
+    padding: 48px 0;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+
+  .section-desc {
+    font-size: 15px;
+    margin-bottom: 32px;
+  }
+
+  .highlights-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 32px;
+  }
+
+  .highlight-card {
+    padding: 24px 20px;
+  }
+
+  .contact-card {
+    padding: 24px 28px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .page-hero {
+    padding: 60px 24px 40px;
+  }
+
+  .page-hero-title {
+    font-size: 30px;
+  }
+
+  .intro-text h2 {
+    font-size: 24px;
+  }
+
+  .intro-visual {
+    max-width: 240px;
+  }
+
+  .intro-image-placeholder {
+    max-height: 380px;
+  }
+
+  /* Features page */
+  .features-nav {
+    padding: 0 16px;
+  }
+
+  .features-nav-link {
+    padding: 12px 14px;
+    font-size: 13px;
+  }
+
+  .feature-section {
+    padding: 40px 0;
+  }
+
+  .feature-header {
+    gap: 14px;
+    margin-bottom: 28px;
+  }
+
+  .feature-number {
+    width: 44px;
+    height: 44px;
+    font-size: 15px;
+  }
+
+  .feature-header h2 {
+    font-size: 22px;
+  }
+
+  .screenshot-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+  }
+
+  .screenshot-placeholder {
+    max-height: 280px;
+  }
+
+  /* FAQ */
+  .faq-question {
+    padding: 14px 18px;
+    font-size: 15px;
+  }
+
+  .faq-item.open .faq-answer {
+    padding: 0 18px 16px;
+  }
+
+  .faq-category-title {
+    font-size: 20px;
+  }
+
+  /* Footer */
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ===== Small Mobile (max-width: 480px) ===== */
+@media (max-width: 480px) {
+  .hero {
+    padding: 40px 16px 32px;
+  }
+
+  .hero-tagline {
+    font-size: 28px;
+  }
+
+  .hero-app-name {
+    font-size: 20px;
+  }
+
+  .hero-app-name-full {
+    font-size: 15px;
+  }
+
+  .hero-subtitle {
+    font-size: 15px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .phone-mockup {
+    width: 180px;
+    height: 360px;
+    border-radius: 24px;
+  }
+
+  .phone-mockup::before {
+    top: 12px;
+    width: 60px;
+    height: 16px;
+  }
+
+  .phone-screen {
+    border-radius: 16px;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .feature-body {
+    gap: 24px;
+  }
+
+  .screenshot-gallery {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .screenshot-placeholder {
+    max-height: 240px;
+    font-size: 11px;
+  }
+
+  .intro-image-placeholder {
+    max-height: 320px;
+  }
+}
