@@ -1,11 +1,11 @@
-# BaseBall Book Web
+# LUTA Web
 
-BaseBall Book 앱의 소개 및 안내 웹페이지입니다.
+LUTA 앱의 소개 및 안내 웹페이지입니다.
 
 ## 구조
 
 ```
-baseball_book_web/
+luta_web/
 ├── index.html              # 메인 HTML (SPA)
 ├── css/
 │   ├── style.css           # 메인 스타일
@@ -23,7 +23,7 @@ baseball_book_web/
 | 페이지 | 설명 |
 |--------|------|
 | **홈** | 메인 랜딩 페이지, 핵심 기능 하이라이트, 담당자 이메일 연락처 |
-| **앱 소개** | BaseBall Book 앱 소개, 대상 사용자, 주요 특징, 이용 요금 |
+| **앱 소개** | LUTA 앱 소개, 대상 사용자, 주요 특징, 이용 요금 |
 | **기능 안내** | 앱의 각 화면별 상세 기능 설명 및 사용 방법, 스크린샷 영역 |
 | **FAQ** | 자주 묻는 질문과 답변 |
 

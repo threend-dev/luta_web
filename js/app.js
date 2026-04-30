@@ -1,4 +1,4 @@
-// ===== BaseBall Book Web - SPA Router & Interactions =====
+// ===== LUTA Web - SPA Router & Interactions =====
 
 let featuresScrollListenerAdded = false;
 
