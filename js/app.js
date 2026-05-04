@@ -5,6 +5,7 @@ let featuresScrollListenerAdded = false;
 document.addEventListener('DOMContentLoaded', () => {
   initRouter();
   initMobileNav();
+  initLightbox();
 });
 
 // ===== SPA Router =====
@@ -184,3 +185,31 @@ window.addEventListener('scroll', () => {
     navbar.classList.remove('scrolled');
   }
 });
+
+// ===== Lightbox =====
+function initLightbox() {
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const closeBtn = document.querySelector('.lightbox-close');
+
+  if (!lightbox) return;
+
+  document.addEventListener('click', (e) => {
+    if (e.target.tagName === 'IMG' && e.target.closest('.screenshot-item')) {
+      lightboxImg.src = e.target.src;
+      lightbox.classList.add('active');
+    }
+  });
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', () => {
+      lightbox.classList.remove('active');
+    });
+  }
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      lightbox.classList.remove('active');
+    }
+  });
+}
