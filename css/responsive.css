@@ -73,6 +73,12 @@
     --nav-height: 56px;
   }
 
+  .nav-logo-img {
+    height: 60px;
+    width: auto;
+    max-height: none;
+  }
+
   .nav-toggle {
     display: flex;
   }

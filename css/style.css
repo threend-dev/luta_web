@@ -110,6 +110,12 @@ ul, ol {
   color: var(--color-primary-dark);
 }
 
+.nav-logo-img {
+  height: 150px;
+  width: auto;
+  max-height: none;
+}
+
 .logo-icon {
   font-size: 28px;
 }
@@ -1069,4 +1075,24 @@ ul, ol {
 }
 .screenshot-item img:hover {
   transform: scale(1.05);
+}
+
+.text-container {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  padding: 20px;
+}
+.text-container h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  color: var(--primary-color);
+}
+.text-container ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+.text-container p {
+  margin-bottom: 15px;
 }
