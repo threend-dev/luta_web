@@ -16,6 +16,14 @@
       <a href="#" class="btn btn-primary" data-page="intro">앱 소개 보기</a>
       <a href="#" class="btn btn-outline" data-page="features">기능 안내</a>
     </div>
+    <div class="store-badges">
+      <a href="#" target="_blank" aria-label="App Store에서 다운로드">
+        <img src="../assets/Download_on_the_App_Store_Badge_KR_RGB_blk_100317.svg" alt="App Store에서 다운로드">
+      </a>
+      <a href="#" target="_blank" aria-label="Google Play에서 다운로드">
+        <img src="../assets/GetItOnGooglePlay_Badge_Web_color_Korean.png" alt="Google Play에서 다운로드">
+      </a>
+    </div>
   </div>
   <div class="hero-visual">
     <div class="phone-mockup">
@@ -105,5 +113,24 @@
   40%, 55% { transform: translateX(-40%); }
   60%, 75% { transform: translateX(-60%); }
   80%, 100% { transform: translateX(-80%); }
+}
+
+.store-badges {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.store-badges img {
+  height: 48px;
+  width: auto;
+}
+
+@media (max-width: 900px) {
+  .store-badges {
+    justify-content: center;
+  }
 }
 </style>
