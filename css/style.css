@@ -635,10 +635,22 @@ ul, ol {
 }
 
 .pricing-price {
+  margin-bottom: 24px;
+}
+
+.pricing-title {
+  display: block;
   font-size: 36px;
   font-weight: 900;
   color: var(--color-primary-dark);
-  margin-bottom: 24px;
+}
+
+.pricing-monthly {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+  margin-top: 4px;
 }
 
 .pricing-features {
