@@ -1,5 +1,5 @@
 import re
-with open('views/home.html', 'r', encoding='utf-8') as f:
+with open('pages/home.html', 'r', encoding='utf-8') as f:
     content = f.read()
 
 # Instead of `style="position: relative; overflow: hidden; border-radius: 26px;"`, we set explicit layout styles
@@ -12,5 +12,5 @@ content = content.replace(old_style, new_style)
 # Actually, no need to clean up if it's not hurting, but it's cleaner without duplicates.
 content = re.sub(r'<style>.*?local-slide-gallery.*?</style>', '', content, flags=re.DOTALL)
 
-with open('views/home.html', 'w', encoding='utf-8') as f:
+with open('pages/home.html', 'w', encoding='utf-8') as f:
     f.write(content)

@@ -1,6 +1,6 @@
 import re
 
-html_file = 'views/features.html'
+html_file = 'pages/features.html'
 with open(html_file, 'r', encoding='utf-8') as f:
     content = f.read()
 
