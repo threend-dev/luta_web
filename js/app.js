@@ -54,7 +54,7 @@ async function showPage(pageId, pushState = true) {
   const target = document.getElementById(`page-${pageId}`);
   if (target) {
     try {
-      const res = await fetch(`pages/${pageId}.html`, { cache: 'no-cache' });
+      const res = await fetch(`html/${pageId}.html`, { cache: 'no-cache' });
       if (!res.ok) throw new Error(`페이지 로드 실패: ${pageId}`);
       target.innerHTML = await res.text();
 
